@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using Esri.ArcGISRuntime.Maui;
 
 namespace MauiVanillaApp
 {
@@ -14,6 +15,7 @@ namespace MauiVanillaApp
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+            builder.UseArcGISRuntime();
 
 #if DEBUG
 		builder.Logging.AddDebug();
